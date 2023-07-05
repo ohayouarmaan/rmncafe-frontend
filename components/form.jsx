@@ -6,10 +6,6 @@ export default function Form() {
     <form>
       <div className="m-5">
         <div className="">
-          <p className="mt-1 text-sm  text-white-600">
-            This information will be displayed publicly so be careful what you
-            share.
-          </p>
 
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-2 sm:grid-cols-6">
             <div className="sm:col-span-3">
@@ -78,6 +74,9 @@ export default function Form() {
         }} className='px-5 w-full my-9 pixel-border bg-teal' type="submit">
           Submit
         </motion.button>
+          <p className="mt-1 text-sm  text-gray-300">
+            armaan might mail some cool stuffs to you :D
+          </p>
       </div>
     </form>
   );

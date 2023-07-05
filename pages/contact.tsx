@@ -17,7 +17,7 @@ export default function Contact() {
                     </h1>
                 </div>
                 <div className="right h-full w-1/2 flex flex-col items-center justify-center">
-                    <Image src={"/kitty-chase-pixel.gif"} alt="cat" width={200} height={200}/>
+                    <Image src={"/cats-animated.gif"} alt="cat" width={200} height={200}/>
                 </div>
             </div>
         </main>
