@@ -29,9 +29,9 @@ export default function Home() {
             <div className="buttons gap-9 grid grid-cols-3">
               <motion.button whileTap={{ opacity: 0.7 }} whileHover={{ scale: 0.93 }} className='px-5 my-2 pixel-border bg-teal'>Projects</motion.button>
               <motion.button whileTap={{ opacity: 0.7 }}  whileHover={{ scale: 0.93 }} className='px-5 my-2 pixel-border bg-teal' onClick={(e) => {router.push("/about")}}>About</motion.button>
-              <motion.button whileTap={{ opacity: 0.7 }}  whileHover={{ scale: 0.93 }} className='px-5 my-2 pixel-border bg-teal'>Contacts</motion.button>
-              <motion.button whileTap={{ opacity: 0.7 }}  whileHover={{ scale: 0.93 }} className='px-5 my-2 pixel-border bg-teal'>Blogs</motion.button>
-              <motion.button whileTap={{ opacity: 0.7 }}  whileHover={{ scale: 0.93 }} className='px-5 my-2 pixel-border bg-teal'>Register</motion.button>
+              <motion.button whileTap={{ opacity: 0.7 }}  whileHover={{ scale: 0.93 }} className='px-5 my-2 pixel-border bg-teal' onClick={(e) => {router.push("/contact")}}>Contacts</motion.button>
+              <motion.button whileTap={{ opacity: 0.7 }}  whileHover={{ scale: 0.93 }} className='px-5 my-2 pixel-border bg-teal' onClick={(e) => {router.push("/contact")}}>Blogs</motion.button>
+              <motion.button whileTap={{ opacity: 0.7 }}  whileHover={{ scale: 0.93 }} className='px-5 my-2 pixel-border bg-teal' onClick={(e) => {router.push("/register")}}>Register</motion.button>
             </div>
           </div>
           <div className="h-full w-1/2 flex flex-col items-center justify-center">
