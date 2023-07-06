@@ -91,6 +91,14 @@
   }
 }
 
+.md-container h1 {
+  @apply text-xl;
+}
+.md-container a {
+  @apply underline;
+  @apply underline-offset-[16];
+  @apply text-gray-400;
+}
 .pixel-border {
 	background: var(--pixel-bg);
 	box-shadow:

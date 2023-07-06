@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/cute-cat.gif" type='image/gif'/>
       </Head>
       <main className="p-9 bg-black h-[100vh] w-[100vw] flex flex-col justify-center items-center">
-        <div className="bg-teal-800 w-[80vw] h-[80vh] relative flex justify-between items-center">
+        <div className="bg-teal-800 w-[80vw] h-[80vh] relative flex flex-col sm:flex-row justify-between items-center">
           <motion.div animate={{height: 0}}
                       transition={{ duration: 2, ease: "easeInOut" }}
                       className="absolute h-full w-full top-0 left-0 bg-black z-10">
@@ -26,7 +26,7 @@ export default function Home() {
             <motion.h1 initial={{ x: "-30%", opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{duration: 1, delay: 0.7}} className="uppercase flex-col mb-5 items-center justify-center text-start  text-white font-bold text-3xl animate-scale z-0">
               rmn's cafe 
             </motion.h1>
-            <div className="buttons gap-9 grid grid-cols-3">
+            <div className="buttons gap-3 sm:gap-9 grid grid-cols-1 sm:grid-cols-3">
               <motion.button whileTap={{ opacity: 0.7 }} whileHover={{ scale: 0.93 }} className='px-5 my-2 pixel-border bg-teal'>Projects</motion.button>
               <motion.button whileTap={{ opacity: 0.7 }}  whileHover={{ scale: 0.93 }} className='px-5 my-2 pixel-border bg-teal' onClick={(e) => {router.push("/about")}}>About</motion.button>
               <motion.button whileTap={{ opacity: 0.7 }}  whileHover={{ scale: 0.93 }} className='px-5 my-2 pixel-border bg-teal' onClick={(e) => {router.push("/contact")}}>Contacts</motion.button>
@@ -35,7 +35,7 @@ export default function Home() {
             </div>
           </div>
           <div className="h-full w-1/2 flex flex-col items-center justify-center">
-            <div className="h-full flex flex-col justify-center">
+            <div className="h-full flex flex-col items-stretch pl-4 justify-center">
               <motion.div whileTap={{ opacity: 0.5 }} whileHover={{ scale: 0.93 }}>
                 <Image src={"/cute-cat.gif"} alt="cat :3" width={250} height={250} style={{ transform: "scaleX(-1)" }} />
               </motion.div>
