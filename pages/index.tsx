@@ -27,7 +27,7 @@ export default function Home() {
               rmn's cafe 
             </motion.h1>
             <div className="buttons gap-3 sm:gap-9 grid grid-cols-1 sm:grid-cols-3">
-              <motion.button whileTap={{ opacity: 0.7 }} whileHover={{ scale: 0.93 }} className='px-5 my-2 pixel-border bg-teal'>Projects</motion.button>
+              <motion.button whileTap={{ opacity: 0.7 }} whileHover={{ scale: 0.93 }} className='px-5 my-2 pixel-border bg-teal'onClick={(e) => {router.push("/projects")}}>Projects</motion.button>
               <motion.button whileTap={{ opacity: 0.7 }}  whileHover={{ scale: 0.93 }} className='px-5 my-2 pixel-border bg-teal' onClick={(e) => {router.push("/about")}}>About</motion.button>
               <motion.button whileTap={{ opacity: 0.7 }}  whileHover={{ scale: 0.93 }} className='px-5 my-2 pixel-border bg-teal' onClick={(e) => {router.push("/contact")}}>Contacts</motion.button>
               <motion.button whileTap={{ opacity: 0.7 }}  whileHover={{ scale: 0.93 }} className='px-5 my-2 pixel-border bg-teal' onClick={(e) => {router.push("/contact")}}>Blogs</motion.button>
