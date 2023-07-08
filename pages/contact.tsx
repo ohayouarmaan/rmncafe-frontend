@@ -47,7 +47,7 @@ export default function Contact(props: {
         <h1 className="absolute top-10 left-[50%] translate-x-[-50%] text-4xl uppercase font-bold underline underline-offset-[10px]">
           Contact Me
         </h1>
-        <div ref={buttonsHolder} className="left h-full p-9 w-1/2 flex flex-col items-center justify-center">
+        <div ref={buttonsHolder} className="left h-full p-9 w-1/2 flex flex-col gap-9 items-center justify-center">
           <p className="text-xl">You can contact me via these:</p>
           <br />
           {props.data.map((contact) => (

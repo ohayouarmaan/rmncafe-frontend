@@ -30,7 +30,7 @@ export default function Home() {
               <motion.button whileTap={{ opacity: 0.7 }} whileHover={{ scale: 0.93 }} className='px-5 my-2 pixel-border bg-teal'onClick={(e) => {router.push("/projects")}}>Projects</motion.button>
               <motion.button whileTap={{ opacity: 0.7 }}  whileHover={{ scale: 0.93 }} className='px-5 my-2 pixel-border bg-teal' onClick={(e) => {router.push("/about")}}>About</motion.button>
               <motion.button whileTap={{ opacity: 0.7 }}  whileHover={{ scale: 0.93 }} className='px-5 my-2 pixel-border bg-teal' onClick={(e) => {router.push("/contact")}}>Contacts</motion.button>
-              <motion.button whileTap={{ opacity: 0.7 }}  whileHover={{ scale: 0.93 }} className='px-5 my-2 pixel-border bg-teal' onClick={(e) => {router.push("/contact")}}>Blogs</motion.button>
+              <motion.button whileTap={{ opacity: 0.7 }}  whileHover={{ scale: 0.93 }} className='px-5 my-2 pixel-border bg-teal' onClick={(e) => {router.push("/blogs")}}>Blogs</motion.button>
               <motion.button whileTap={{ opacity: 0.7 }}  whileHover={{ scale: 0.93 }} className='px-5 my-2 pixel-border bg-teal' onClick={(e) => {router.push("/register")}}>Register</motion.button>
             </div>
           </div>
