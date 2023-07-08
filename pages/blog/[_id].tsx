@@ -54,7 +54,7 @@ export default function Blog() {
         setStatus(networkStatus.error);
       }
     })();
-  }, [router.query, blogData]);
+  }, [router.isReady, router.query, blogData]);
 
   useEffect(() =>  {
     (async () => {
@@ -74,7 +74,7 @@ export default function Blog() {
                               .process(blogData?.content))).result)
         }
     })()
-  }, [ status ])
+  }, [ status, blogData ])
   const nthNumber = (number: number) => {
     if (number > 3 && number < 21) return "th";
     switch (number % 10) {
@@ -117,7 +117,7 @@ export default function Blog() {
           </div>
         ) : status == networkStatus.error ? (
           <div>
-            <h1>bro this thing doesn't even exist 💀</h1>
+            <h1>bro this thing doesn&apos;t even exist 💀</h1>
           </div>
         ) : status == networkStatus.loading ? (
           <div>

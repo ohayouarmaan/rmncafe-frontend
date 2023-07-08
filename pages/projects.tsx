@@ -35,7 +35,7 @@ export default function Contact(props: {
         });
       });
     }
-  }, []);
+  }, [router]);
   return (
     <main className="bg-[#27374D] px-6 flex flex-col items-center justify-center h-[100vh] w-[100vw]">
       <div className="h-[80vh] w-[80vw] relative text-white flex items-center justify-center bg-[#526D82] px-8">
@@ -58,7 +58,7 @@ export default function Contact(props: {
 
         {
             props.data.map(project => (
-                <div className="bg-[#9DB2BF] relative py-9 text-black max-h-1/2 flex flex-col items-center">
+                <div key={project._id} className="bg-[#9DB2BF] relative py-9 text-black max-h-1/2 flex flex-col items-center">
                     <h1 className="text-xl">{project.title}</h1>
                     <div className="w-[80%] bg-black h-[1px]"></div>
                     <p className="text-sm text-left m-4">{project.description.split(" ").slice(0, 50).join(" ") + "... Read More?"}</p>

@@ -28,7 +28,7 @@ export default function Contact(props: {
             })
         })
     }
-  }, [])
+  }, [router])
   return (
     <main className="bg-[#2D4356] flex flex-col items-center justify-center h-[100vh] w-[100vw]">
       <div className="h-[80vh] w-[80vw] relative text-white flex items-center justify-center bg-[#435B66]">
