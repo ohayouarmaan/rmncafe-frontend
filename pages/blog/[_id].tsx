@@ -54,7 +54,7 @@ export default function Blog() {
         setStatus(networkStatus.error);
       }
     })();
-  }, [router.isReady]);
+  }, [router.query, blogData]);
 
   useEffect(() =>  {
     (async () => {
