@@ -1,4 +1,6 @@
 import '../styles/globals.css'
+import 'prismjs/themes/prism-okaidia.css';
+
 import { AnimatePresence, motion } from 'framer-motion'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'

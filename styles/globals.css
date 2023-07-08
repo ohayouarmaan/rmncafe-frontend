@@ -91,6 +91,44 @@
   }
 }
 
+table {
+  @apply table-auto;
+  @apply border-white;
+  @apply border-2;
+  @apply border-spacing-3;
+}
+
+tr:nth-child(even) {
+  @apply bg-gray-800
+}
+
+td {
+  @apply p-5;
+}
+
+thead {
+  @apply bg-gray-800
+}
+
+.markdown-container p {
+  padding-bottom: 10px;
+  @apply text-gray-400
+}
+
+.markdown-container h2 {
+  @apply text-xl;
+}
+svg[id^=mermaid] {
+  @apply bg-gray-500;
+  @apply w-full;
+}
+.markdown-container h1 {
+  @apply text-2xl;
+  @apply font-bold;
+  @apply underline;
+  @apply underline-offset-4;
+}
+
 .md-container h1 {
   @apply text-xl;
 }
@@ -99,6 +137,11 @@
   @apply underline-offset-[16];
   @apply text-gray-400;
 }
+
+.messageText {
+  color: white;
+}
+
 .pixel-border {
 	background: var(--pixel-bg);
 	box-shadow:
