@@ -20,9 +20,8 @@ export default function BlogPage() {
   useEffect(() => {
     (async () => {
       try {
-        const res = await fetch(
-          `http://localhost:4000/blog?from=${paginationLimit.from}&to=${paginationLimit.to}`
-        );
+        const res = await fetch(`${process.env.SERVER_URL}/blog/?from=${paginationLimit.from}&to=${paginationLimit.to}`);
+        console.log(res.body);
         const data: {
           blogs: {
             _id: string;
@@ -38,7 +37,7 @@ export default function BlogPage() {
         console.log(e.message);
       }
     })();
-  }, [paginationLimit]);
+  }, [process.env, paginationLimit]);
 
   return (
     <div className="text-white p-[5%] bg-[#4C4B16] min-h-screen w-[100vw] flex items-center justify-center ">

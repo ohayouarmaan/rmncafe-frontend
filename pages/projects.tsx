@@ -7,7 +7,7 @@ import html from "remark-html";
 import { useRef, useEffect } from "react";
 
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:4000/portfolio/projects");
+  const res = await fetch(`${process.env.SERVER_URL}/portfolio/projects`);
   const data: {
     projects: {
       _id: string;

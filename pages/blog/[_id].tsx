@@ -35,7 +35,7 @@ export default function Blog() {
     (async () => {
       try {
         const response = await fetch(
-          `http://localhost:4000/blog/${router.query._id}`
+          `${process.env.SERVER_URL}/blog/${router.query._id}`
         );
         const data: {
           content: string;

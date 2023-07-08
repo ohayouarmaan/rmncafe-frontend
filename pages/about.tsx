@@ -6,7 +6,7 @@ import { remark } from "remark"
 import html from "remark-html"
 
 export const getStaticProps = async () => {
-    const res = await fetch("http://localhost:4000/portfolio/about");
+    const res = await fetch(`${process.env.SERVER_URL}/portfolio/about`);
     const data: { about: {_id: string, about: string }[] } = await  res.json();
     const htmlValue = (await remark().use(html).process(data.about[0].about)).toString()
     console.log(htmlValue);
