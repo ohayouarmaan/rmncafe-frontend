@@ -31,7 +31,7 @@ export default function About(props: { data: string }) {
                 })
             })
         }
-    }, [])
+    }, [router])
 
     return (
         <main className="bg-[#001C30] flex flex-col items-center justify-center h-[100vh] w-[100vw]">
