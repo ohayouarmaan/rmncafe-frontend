@@ -33,7 +33,6 @@ export default function BlogPage() {
         } = await res.json();
         setBlogs(data.blogs);
       } catch (e: any) {
-        console.log("wtf");
         console.log(e.message);
       }
     })();
