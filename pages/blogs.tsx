@@ -36,7 +36,7 @@ export default function BlogPage() {
         console.log(e.message);
       }
     })();
-  }, [process.env, paginationLimit]);
+  }, [paginationLimit]);
 
   return (
     <div className="text-white p-[5%] bg-[#4C4B16] min-h-screen w-[100vw] flex items-center justify-center ">
@@ -59,7 +59,7 @@ export default function BlogPage() {
         <div className="grid gap-9 p-5 grid-cols-3 w-full h-[60%] overflow-y-auto">
           {blogs.length > 0 ? (
             blogs.map((i) => (
-              <div className="bg-[#F7F1E5] relative py-9 text-black max-h-1/2 flex flex-col items-center">
+              <div key={i._id} className="bg-[#F7F1E5] relative py-9 text-black max-h-1/2 flex flex-col items-center">
                 <h1 className="text-xl">{i.title}</h1>
                 <div className="w-[80%] bg-black h-[1px]"></div>
                 <p className="text-sm text-left m-4">
